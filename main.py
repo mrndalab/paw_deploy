@@ -4,6 +4,11 @@ import p9
 
 app = Flask(__name__)
 
+
+@app.route("/")
+def home():
+    return "Hello from PythonAnywhere!"
+
 def delayed_call():
     import time
     print('akshat')
